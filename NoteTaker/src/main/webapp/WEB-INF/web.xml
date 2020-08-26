@@ -1,0 +1,94 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+<welcome-file-list>
+<welcome-file>Login.jsp</welcome-file>
+</welcome-file-list>
+
+
+
+
+
+
+
+
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>NoteServlet</servlet-name>
+  	<display-name>NoteServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.Servlet.NoteServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UploadServlet</servlet-name>
+  	<display-name>UploadServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.Servlet.UploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateNote</servlet-name>
+  	<display-name>UpdateNote</display-name>
+  	<description></description>
+  	<servlet-class>com.Servlet.UpdateNote</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<display-name>RegisterServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.Servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UserRegister</servlet-name>
+  	<display-name>UserRegister</display-name>
+  	<description></description>
+  	<servlet-class>com.Servlet.UserRegister</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<display-name>AdminServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.Servlet.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>NoteServlet</servlet-name>
+  	<url-pattern>/NoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UploadServlet</servlet-name>
+  	<url-pattern>/UploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateNote</servlet-name>
+  	<url-pattern>/UpdateNote</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UserRegister</servlet-name>
+  	<url-pattern>/UserRegister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+  
+    <context-param>
+  <param-name>UPLOAD_PATH</param-name>
+  <param-value>C:\\Users\\happy\\workspace\\NoteTaker\\src\\main\\webapp\\image\\</param-value>
+  </context-param>
+  
+  <context-param>
+  <param-name>MAX_FILE_SIZE</param-name>
+  <param-value>1024000</param-value>
+  </context-param>
+  
+  <context-param>
+  <param-name>MAX_MEM_SIZE</param-name>
+  <param-value>1024000</param-value>
+  </context-param>
+</web-app>
